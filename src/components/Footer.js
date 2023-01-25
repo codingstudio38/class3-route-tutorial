@@ -3,7 +3,7 @@ import { Fragment } from "react";
 function Footer() {
     return (
         <Fragment>
-            <footer className="text-center text-lg-start bg-light text-muted">
+            <footer className="text-center text-lg-start bg-light text-muted" style={{ bottom: "0" }}>
 
                 <section
                     className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"

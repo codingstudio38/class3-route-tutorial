@@ -1,7 +1,6 @@
 import { useSearchParams, useLocation } from 'react-router-dom';
 export default function Filter() {
     const location = useLocation();
-    // console.log(location);
     const [searchParams, setSearchParams] = useSearchParams();
     function update() {
         setSearchParams({ age: 50, type: "its works" })
@@ -12,4 +11,4 @@ export default function Filter() {
             <button onClick={() => update()}>Change Params</button>
         </div>
     )
-} 
+}     

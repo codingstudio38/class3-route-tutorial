@@ -22,8 +22,8 @@ function NavScrollExample() {
                         <NavLink to="/" className='nav-link'>Home</NavLink>
                         <NavLink to="/about" className='nav-link'>About</NavLink>
                         <NavDropdown title="USER" id="navbarScrollingDropdown" >
-                            <NavLink to="/user/vidyut" data-rr-ui-dropdown-item="" className='dropdown-item' role="button" >User Vidyut</NavLink>
-                            <NavLink to="/user/bidyut" data-rr-ui-dropdown-item="" className='dropdown-item' role="button" >User Bidyut</NavLink>
+                            <NavLink to="/user/vidyut/1" data-rr-ui-dropdown-item="" className='dropdown-item' role="button" >User Vidyut</NavLink>
+                            <NavLink to="/user/bidyut/2" data-rr-ui-dropdown-item="" className='dropdown-item' role="button" >User Bidyut</NavLink>
                         </NavDropdown>
                         <NavLink to="/filter?age=60&type=itoks" className='nav-link' state={{ name: "vidyut", age: 23 }}>Filter</NavLink>
                         <NavDropdown title="API" id="navbarScrollingDropdown" >

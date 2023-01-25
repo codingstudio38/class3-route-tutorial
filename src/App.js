@@ -27,8 +27,7 @@ function App() {
           <Route path='/home' element={<Home />} />
           <Route path='/about' element={<About />} />
           {/* <Route path='/*' element={<Navigate to="/" />} /> */}
-          <Route path='/*' element={<Page404notfound />} />
-          <Route path='/user/:name' element={<Protected Component={User} />} />
+          <Route path='/user/:name/:id' element={<Protected Component={User} />} />
           <Route path='/filter' element={<Filter />} />
           <Route path='/contact/' element={<Contact />}>
             <Route path='company' element={<Company />} />
@@ -38,6 +37,7 @@ function App() {
           <Route path='/login' element={<Login />} />
           <Route path='/apiclass1' element={<Apiclass1 />} />
           <Route path='/Apiclass2' element={<Apiclass2 />} />
+          <Route path='/*' element={<Page404notfound />} />
         </Routes>
         <Footer />
       </BrowserRouter>

@@ -4,14 +4,14 @@ export default function Login() {
     useEffect(() => {
         let login = localStorage.getItem('login');
         if (login) {
-            navigate('/user/vidyut');
+            navigate('/user/vidyut/1');
         }
     })
     const navigate = useNavigate();
     const loginnow = () => {
         window.localStorage.clear();
         window.localStorage.setItem('login', true);
-        navigate('/user/vidyut');
+        navigate('/user/vidyut/1');
     }
 
     return (
